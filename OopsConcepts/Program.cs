@@ -13,7 +13,7 @@ namespace OopsConcepts
         {
             Console.WriteLine(" ***** Welcome to Oops Concepts problems ***** ");
             
-            Console.WriteLine("Choose given option : \n1) Class and opbject concept \n2) Inheritance example" );
+            Console.WriteLine("Choose given option : \n1) Class and opbject concept \n2) Inheritance example \n3) Polymorphism exapmle with their types" );
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -28,7 +28,14 @@ namespace OopsConcepts
                    Twowheeler inherit = new Twowheeler();
                     Car car = new Car();
                     inherit.Hock();
-                    Console.WriteLine("carname :" + inherit.modelname + "2]" + car.modelname + "Brand name :"  inherit.Brand);
+                    Console.WriteLine("carname :" + inherit.modelname + "2]" + car.modelname + "Brand name :" + inherit.Brand);
+                    break;
+               case 3:
+                    Console.WriteLine("Overloading example :");
+                    Overloading overloading=new Overloading();
+                    Console.WriteLine( "a+b :" + overloading.Add(2,3));
+                    overloading.Add(3.3f,4,5);
+                    overloading.Add(3.8, 2.1f, 4);
                     break;
             }
         }
