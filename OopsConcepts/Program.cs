@@ -36,8 +36,14 @@ namespace OopsConcepts
                     Console.WriteLine( "a+b :" + overloading.Add(2,3));
                     overloading.Add(3.3f,4,5);
                     overloading.Add(3.8, 2.1f, 4);
+                    Console.WriteLine("\n Overriding Example :");
+                    Animal animal = new Animal();
+                    animal.Run();
+                    animal = new Lion();
+                    animal.Run();
                     break;
             }
+
         }
     }
 }
