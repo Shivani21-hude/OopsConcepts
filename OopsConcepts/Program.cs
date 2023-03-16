@@ -14,7 +14,7 @@ namespace OopsConcepts
             Console.WriteLine(" ***** Welcome to Oops Concepts problems ***** ");
             
             Console.WriteLine("Choose given option : \n1) Class and opbject concept \n2) Inheritance example \n3) Polymorphism exapmle with their type0s \n" +
-                "4) Encapsulation Example \n5) Abstraction Example" );
+                "4) Encapsulation Example \n5) Abstraction Example \n6)Types of variables" );
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -54,6 +54,15 @@ namespace OopsConcepts
                     shape.Show();
                     shape = new Square();
                     shape.Show();
+                    break;
+                case 6:
+                    TypesOfVariables types = new TypesOfVariables();
+                    types.Display();
+                    Console.WriteLine("instance variable : " +types.d);
+                    TypesOfVariables.name = "Shivani";
+                    Console.WriteLine("Name :"+ TypesOfVariables.name + "  Salary : " + TypesOfVariables.salary); //static field directly call class
+                    Console.WriteLine("const variable : " + TypesOfVariables.max); //const also a static field
+                    Console.WriteLine("readonly variable : " +types.value);
                     break;
 
             }
