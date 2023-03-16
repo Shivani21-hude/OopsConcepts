@@ -14,7 +14,7 @@ namespace OopsConcepts
             Console.WriteLine(" ***** Welcome to Oops Concepts problems ***** ");
             
             Console.WriteLine("Choose given option : \n1) Class and opbject concept \n2) Inheritance example \n3) Polymorphism exapmle with their type0s \n" +
-                "4) Encapsulation Example \n5) Abstraction Example \n6)Types of variables" );
+                "4) Encapsulation Example \n5) Abstraction Example \n6)Types of variables \n7) Types of methods " );
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -64,7 +64,13 @@ namespace OopsConcepts
                     Console.WriteLine("const variable : " + TypesOfVariables.max); //const also a static field
                     Console.WriteLine("readonly variable : " +types.value);
                     break;
-
+                case 7:
+                    Console.WriteLine("Virtual method ===>");
+                   TypesOfMethod method=new TypesOfMethod(); //for to call virtual method ,object is to create
+                    method.TakeReference();
+                    Console.WriteLine("Static Method ===>");
+                    Console.WriteLine("  " +TypesOfMethod.StaticMethod());
+                    break;
             }
 
         }
