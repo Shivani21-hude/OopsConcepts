@@ -13,7 +13,8 @@ namespace OopsConcepts
         {
             Console.WriteLine(" ***** Welcome to Oops Concepts problems ***** ");
             
-            Console.WriteLine("Choose given option : \n1) Class and opbject concept \n2) Inheritance example \n3) Polymorphism exapmle with their types" );
+            Console.WriteLine("Choose given option : \n1) Class and opbject concept \n2) Inheritance example \n3) Polymorphism exapmle with their type0s \n" +
+                "4) Encapsulation Example" );
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -41,6 +42,13 @@ namespace OopsConcepts
                     animal.Run();
                     animal = new Lion();
                     animal.Run();
+                    break;
+                case 4:
+                    EncapsulationExample example = new EncapsulationExample();
+                    example.Employee();
+                   string Name = "Shivani";
+                    example.Display();
+
                     break;
             }
 
