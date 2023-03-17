@@ -14,7 +14,7 @@ namespace OopsConcepts
             Console.WriteLine(" ***** Welcome to Oops Concepts problems ***** ");
             
             Console.WriteLine("Choose given option : \n1) Class and opbject concept \n2) Inheritance example \n3) Polymorphism exapmle with their type0s \n" +
-                "4) Encapsulation Example \n5) Abstraction Example \n6)Types of variables \n7) Types of methods " );
+                "4) Encapsulation Example \n5) Abstraction Example \n6)Types of variables \n7) Types of methods \n8) Value types Ad Reference types" );
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -69,7 +69,14 @@ namespace OopsConcepts
                    TypesOfMethod method=new TypesOfMethod(); //for to call virtual method ,object is to create
                     method.TakeReference();
                     Console.WriteLine("Static Method ===>");
-                    Console.WriteLine("  " +TypesOfMethod.StaticMethod());
+                    Console.WriteLine("return value " +TypesOfMethod.StaticMethod());
+                    break;
+
+                case 8:
+                    Console.WriteLine(" \n *** Value Type ***");
+                    ValueType.Value_Type();
+                    Console.WriteLine("\n *** Reference Type ***");
+                    ReferenceType.TypeReference();
                     break;
             }
 
