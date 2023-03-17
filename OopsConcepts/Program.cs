@@ -14,7 +14,8 @@ namespace OopsConcepts
             Console.WriteLine(" ***** Welcome to Oops Concepts problems ***** ");
             
             Console.WriteLine("Choose given option : \n1) Class and opbject concept \n2) Inheritance example \n3) Polymorphism exapmle with their type0s \n" +
-                "4) Encapsulation Example \n5) Abstraction Example \n6)Types of variables \n7) Types of methods \n8) Value types Ad Reference types" );
+                "4) Encapsulation Example \n5) Abstraction Example \n6)Types of variables \n7) Types of methods \n8) Value types Ad Reference types " +
+                "\n9)Types of Inheritance" );
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -78,6 +79,31 @@ namespace OopsConcepts
                     Console.WriteLine("\n *** Reference Type ***");
                     ReferenceType.TypeReference();
                     break;
+
+                case 9:
+                    Console.WriteLine("\n *** Single Inheritance ***");
+                    DebitCard card = new DebitCard();
+                    card.Credit();
+                    card.Debit();
+                    Console.WriteLine("\n *** Hierarchical Inheritance ***");
+                    B b = new B();
+                    Console.WriteLine( b.Msg());
+                    Console.WriteLine(b.GetMsg());
+                    C c = new C();
+                    Console.WriteLine(c.Msg());
+                    Console.WriteLine(c.GeTinfo());
+                    Console.WriteLine("\n ** Multiple Inheritance **");
+                    SmartWatch smartWatch = new SmartWatch();
+                    smartWatch.PhoneModel();
+                    smartWatch.MobileModel();
+                    smartWatch.WatchModel();
+                    Console.WriteLine(" \n ** Multilevel Inheritance ** ");
+                    Womens womens = new Womens();
+                    womens.TotalPeople();
+                    womens.TotalMen();
+                    womens.TotalWomens();
+                    break;
+
             }
 
         }
