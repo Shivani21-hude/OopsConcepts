@@ -15,7 +15,7 @@ namespace OopsConcepts
             
             Console.WriteLine("Choose given option : \n1) Class and opbject concept \n2) Inheritance example \n3) Polymorphism exapmle with their type0s \n" +
                 "4) Encapsulation Example \n5) Abstraction Example \n6)Types of variables \n7) Types of methods \n8) Value types Ad Reference types " +
-                "\n9)Types of Inheritance" );
+                "\n9)Types of Inheritance \n10) Interface Example" );
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -28,16 +28,16 @@ namespace OopsConcepts
                     break;
                 case 2:
                    Twowheeler inherit = new Twowheeler();
-                    Car car = new Car();
+                   Car car = new Car();
                     inherit.Hock();
-                    Console.WriteLine("carname :" + inherit.modelname + "2]" + car.modelname + "Brand name :" + inherit.Brand);
+                    Console.WriteLine("carname :" + inherit.modelname + " 2]Model name : " + car.modelname + " , Brand name :" + inherit.Brand);
                     break;
                case 3:
                     Console.WriteLine("Overloading example :");
                     Overloading overloading=new Overloading();
                     Console.WriteLine( "a+b :" + overloading.Add(2,3));
                     overloading.Add(3.3f,4,5);
-                    overloading.Add(3.8, 2.1f, 4);
+                    overloading.Add(3.8, 2.1f, 4,6);
                     Console.WriteLine("\n Overriding Example :");
                     Animal animal = new Animal();
                     animal.Run();
@@ -103,6 +103,15 @@ namespace OopsConcepts
                     womens.TotalMen();
                     womens.TotalWomens();
                     break;
+
+                case 10:
+                    Console.WriteLine(" *** Interface Example ***");
+                    Fruits fruits = new Orange();
+                    fruits.Draw();
+                    fruits = new Apple();
+                    fruits.Draw();
+                    break;
+
 
             }
 
