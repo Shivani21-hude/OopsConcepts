@@ -10,9 +10,9 @@ namespace TypesOfConstructors
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Default Constructor");
+            Console.WriteLine(" ** Default Constructor **");
            DefaultConstructorexample E1 = new DefaultConstructorexample();
-            Console.WriteLine("\n Parameterized consrtuctor");
+            Console.WriteLine("\n ** Parameterized consrtuctor **");
             ParameterizedConstrutor e1 = new ParameterizedConstrutor(2,"Shivani");
             e1.Display();
 
